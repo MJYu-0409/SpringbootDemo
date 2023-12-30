@@ -17,7 +17,7 @@ public class SpringbootDemoApplication {
         SpringApplication.run(SpringbootDemoApplication.class, args);
     }
 
-    @GetMapping("/hello")
+    @GetMapping("/hellotest2")
     public String hello(@RequestParam(value = "name",defaultValue = "World!") String name) {
         return String.format("hello %s",name);
     }
